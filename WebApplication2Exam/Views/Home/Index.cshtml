@@ -1,0 +1,32 @@
+﻿@{
+    @model List<WebApplication2Exam.Models.Final>
+    <!DOCTYPE html>
+
+    <html>
+    <head>
+        <meta name="viewport" content="width=device-width" />
+        <title>Index</title>
+    </head>
+    <body>
+         <hr />
+        <table border="1">
+            @foreach (var pro in Model)
+            {
+            <tr>
+                <td>
+                    <a href="/Home/Edit">@pro.ProductId</a></td>
+<td>@pro.ProductName </td>
+                <td>@pro.RateDecimal</td>
+                <td>@pro.Description</td>
+                <td>@pro.CategoryName</td>
+
+               
+               
+            </tr>
+            }
+        </table>
+    </body>
+</html>
+
+}
+
